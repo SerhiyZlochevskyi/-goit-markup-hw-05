@@ -241,8 +241,37 @@ margin-bottom: 30px;
   color: var(--title-text-color);
 }
 .img {
+  position: relative;
 margin-right: 30px;
-box-sizing: border-box;
+/* box-sizing: border-box; */
+}
+.devaise{
+  padding-bottom: 94px;
+}
+.devaise-list-img{
+  /* padding-bottom: 30px; */
+}
+
+.descr{
+  position: absolute;
+  padding: 27px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-section-footer-color);
+  background: rgba(47, 48, 58, 0.8);
+  /* color:tomato;
+  background-color: red;
+  outline: 3px solid teal; */
+  /* width: 370px;
+height: 70px; */
+
+
 }
 /* Наша команда */
 .name-comands{
@@ -268,9 +297,7 @@ box-sizing: border-box;
   justify-content: space-around;
   flex-direction: row;
 }
-.devaise-list-img{
-  padding-bottom: 30px;
-}
+
 .container-commands-cart{
 padding: 30px 10px;
 }
@@ -448,11 +475,7 @@ padding-top: 16px;
 .portfolio-blok{
   display: flex;
   flex-wrap: wrap;
-   /* margin-bottom: 50px; */
-/* 
-    width: 575px;
-    margin-left: auto;
-    margin-right: auto; */
+
 }
 .portholio-item {
   max-width: calc((100% - 60px)/3);
@@ -464,7 +487,39 @@ padding-top: 16px;
 .portholio-item:nth-child(3n){
    margin-right: 0;
 }
-
+.poster{
+  position: relative;
+}
+.poster::before{
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  outline: 3px solid red;
+  opacity: 0;
+}
+.poster:hover::before{
+  opacity: 1;
+}
+.poster-list{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 64px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  opacity: 0;
+}
+.poster-list:hover{
+  opacity: 1;
+}
 
 .visually-hidden {
     position: absolute;
