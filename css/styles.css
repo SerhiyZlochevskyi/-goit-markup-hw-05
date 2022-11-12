@@ -141,7 +141,7 @@ img {
   fill: var(--icon-accent-partners-color);
   
 }
-.kurent {
+.curent {
   color: var(--focus-color);
 }
 /* иконки тел. и меил */
@@ -704,4 +704,14 @@ background: rgba(0, 0, 0, 0.2);
   
   background:#FFFFFF;
 
+}
+.curent::after {
+    content: "";
+    display: block;
+    opacity: 1;
+    height: 4px;
+    position: relative;
+    border-radius: 2px;
+    top: 31px;
+    background-color: var(--accent-color);
 }
