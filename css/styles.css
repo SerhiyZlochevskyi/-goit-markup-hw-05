@@ -282,6 +282,7 @@ margin-right: 30px;
   left: 0;
   right: 0;
   bottom: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -348,7 +349,8 @@ padding: 30px 10px;
   height: 44px;
   fill: var(--icon-currentColor);
   border-radius: 50%;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 .link { 
 
@@ -358,7 +360,7 @@ padding: 30px 10px;
  .social-item .link:focus{
   fill: var(--icon-social-accent-color);
   background-color: var(--focus-color);
-  border-radius: 50%
+  /* border-radius: 50% */
 }
 
 .name-comands-programist {
@@ -500,7 +502,7 @@ color: var(--accent-color);
   .link-icon:focus{
   fill: var(--icon-social-accent-color);
     background-color: var(--focus-color);
-    border-radius: 50%
+    /* border-radius: 50% */
  }
 
 
